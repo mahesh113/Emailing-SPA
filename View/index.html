@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<base href="http://localhost:3000/">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="../code.js"></script>
+</head>
+<body   ng-app="myApp" >
+	<div class="page-header">
+    <h1>Mailing Service</h1>      
+  </div>
+	<div class="container">
+	<form ng-controller="mailCtrl" ng-submit="onSubmit()" >
+		<div class="form-group">
+			<label for="id">To:</label>
+			<input type="text" class="form-control" ng-model="mailid"/>
+		</div>
+		<div class="form-group">
+			<label for="usr">Message:</label>
+			<textarea cols="40" rows="9" type="Message" class="form-control" ng-model="body" placeholder="type here."> </textarea>
+		</div>
+		<input  type="submit" id="submit" class="btn btn-primary" value="Send Mail"/>
+
+	</form>
+
+	<!-- <p ng-controller="Ctrl2">
+		<button ng-click="Button2()"> Click ME</button>
+		
+	</p> -->
+	</div>
+</body>
+</html> 
